@@ -26,7 +26,6 @@
 	],
 	"scripts": {
 		"lint": "eslint --config=src/eslint/eslint.config.js --cache src",
-		"publish": "pnpm run /^publish:/",
 		"publish:jsr": "pnpm lint && npx jsr publish",
 		"publish:npm": "pnpm lint && npm publish --access public"
 	},
