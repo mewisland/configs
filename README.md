@@ -1,9 +1,26 @@
 # @mewisland/configs
 
-## Includes
+## Usage
 
-- `eslint.config.js`
-- `biome.json`
+### ESLint
+
+```js
+// eslint.config.js
+import config from "@mewisland/configs/eslint";
+
+export default config;
+```
+
+### Biome
+
+```jsonc
+// biome.json
+{
+	"$schema": "https://biomejs.dev/schemas/2.2.5/schema.json",
+	"extends": ["node_modules/@mewisland/configs/src/biome/biome.json"],
+	"root": true
+}
+```
 
 ## LICENSE
 
