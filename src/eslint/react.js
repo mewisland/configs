@@ -21,6 +21,8 @@ import baseConfig from "./eslint.config.js";
  * export default config;
  * ```
  * 
+ * @since 0.2.0
+ * 
  * @public
  */
 export default defineConfig([

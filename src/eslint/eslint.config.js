@@ -15,10 +15,12 @@ import tseslint from "typescript-eslint";
  * projects.
  *
  * Files matched: JavaScript, TypeScript, JSX and TSX files.
- */
-
-/**
- * Combined ESLint flat configuration (public export).
+ *
+ * @remarks
+ * The module intentionally sets `languageOptions.globals` to the union of
+ * browser and node globals so that configs are safe for mixed environments.
+ * The `parserOptions.tsconfigRootDir` is set to the module directory to
+ * assist tools that resolve tsconfig relative paths.
  *
  * @example
  * ```js
@@ -27,6 +29,8 @@ import tseslint from "typescript-eslint";
  * 
  * export default config;
  * ```
+ *
+ * @since 0.1.0
  *
  * @public
  */
