@@ -3,8 +3,6 @@ import { defineConfig } from "eslint/config";
 import globals from "globals";
 import js from "@eslint/js";
 import tseslint from "typescript-eslint";
-import react from "eslint-plugin-react";
-import reactHooks from "eslint-plugin-react-hooks";
 
 /**
  * ESLint configuration
@@ -30,6 +28,4 @@ export default defineConfig([
 	},
 	js.configs.recommended,
 	tseslint.configs.recommended,
-	react.configs.flat.recommended,
-	reactHooks.configs.flat.recommended,
 ]);

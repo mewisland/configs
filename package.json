@@ -18,6 +18,9 @@
 		},
 		"./eslint": {
 			"import": "./src/eslint/eslint.config.js"
+		},
+		"./eslint/react": {
+			"import": "./src/eslint/react.js"
 		}
 	},
 	"files": [
