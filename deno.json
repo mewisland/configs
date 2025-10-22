@@ -8,5 +8,5 @@
 	},
 	"publish": {
 		"include": ["src/**/*", "README.md"]
-	}	
+	}
 }

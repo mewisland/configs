@@ -26,7 +26,7 @@ import tseslint from "typescript-eslint";
  * ```js
  * // eslint.config.js
  * import config from "@mewisland/configs/eslint";
- * 
+ *
  * export default config;
  * ```
  *
