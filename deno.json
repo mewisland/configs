@@ -3,7 +3,8 @@
 	"version": "0.1.0",
 	"exports": {
 		"./biome": "./src/biome/biome.json",
-		"./eslint": "./src/eslint/eslint.config.js"
+		"./eslint": "./src/eslint/eslint.config.js",
+		"./eslint/react": "./src/eslint/react.js"
 	},
 	"publish": {
 		"include": ["src/**/*", "README.md"]
