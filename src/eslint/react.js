@@ -17,6 +17,6 @@ export default defineConfig([
 	{
 		rules: {
 			"react-hooks/exhaustive-deps": "error",
-		}
-	}
+		},
+	},
 ]);
