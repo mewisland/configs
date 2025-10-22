@@ -11,6 +11,15 @@ import config from "@mewisland/configs/eslint";
 export default config;
 ```
 
+Or
+
+```js
+// eslint.config.js
+import config from "@mewisland/configs/eslint/react";
+
+export default config;
+```
+
 ### Biome
 
 ```jsonc
