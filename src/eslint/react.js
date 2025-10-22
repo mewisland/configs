@@ -6,9 +6,22 @@ import reactHooks from "eslint-plugin-react-hooks";
 import baseConfig from "./eslint.config.js";
 
 /**
- * ESLint configuration
- * - eslint-plugin-react
- * - eslint-plugin-react-hooks
+ * React-specific ESLint flat configuration.
+ *
+ * This file composes the base configuration with recommended rules from
+ * `eslint-plugin-react` and `eslint-plugin-react-hooks`. It also enforces
+ * the `react-hooks/exhaustive-deps` rule as an error to catch missing hook
+ * dependencies during development.
+ *
+ * @example
+ * ```ts
+ * // eslint.config.js
+ * import config from "@mewisland/configs/eslint/react";
+ * 
+ * export default config;
+ * ```
+ * 
+ * @public
  */
 export default defineConfig([
 	baseConfig,
