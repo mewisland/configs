@@ -1,6 +1,6 @@
 {
 	"name": "@mewisland/configs",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Shared configuration presets for ESLint and Biome.",
 	"homepage": "https://github.com/mewisland/configs#readme",
 	"bugs": {
