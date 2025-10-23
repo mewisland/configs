@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.0 - 2025-10-23
+
+- Add React ESLint preset support for `eslint-plugin-react-perf`,
+  `eslint-plugin-react-refresh`, and
+  `eslint-plugin-react-you-might-not-need-an-effect`
+
 ## v0.2.0 - 2025-10-22
 
 - Split out and add a React-specific ESLint config

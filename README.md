@@ -20,6 +20,12 @@ import config from "@mewisland/configs/eslint/react";
 export default config;
 ```
 
+React projects must also install the peer dependencies used by the preset:
+
+```
+pnpm add -D eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-perf eslint-plugin-react-refresh eslint-plugin-react-you-might-not-need-an-effect
+```
+
 ### Biome
 
 ```jsonc

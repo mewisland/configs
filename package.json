@@ -1,6 +1,6 @@
 {
 	"name": "@mewisland/configs",
-	"version": "0.2.0",
+        "version": "0.3.0",
 	"description": "Shared configuration presets for ESLint and Biome.",
 	"homepage": "https://github.com/mewisland/configs#readme",
 	"bugs": {
@@ -36,15 +36,18 @@
 		"@eslint/js": "^9.38.0",
 		"eslint": "^9.38.0",
 		"eslint-plugin-react": "^7.37.5",
-		"eslint-plugin-react-hooks": "^7.0.0",
+                "eslint-plugin-react-hooks": "^7.0.0",
 		"globals": "^16.4.0",
 		"typescript-eslint": "^8.46.2"
 	},
 	"peerDependencies": {
 		"@eslint/js": "^9.38.0",
 		"eslint": "^9.37.0",
-		"eslint-plugin-react": "^7.37.5",
-		"eslint-plugin-react-hooks": "^7.0.0",
+                "eslint-plugin-react": "^7.37.5",
+                "eslint-plugin-react-hooks": "^7.0.0",
+                "eslint-plugin-react-perf": "*",
+                "eslint-plugin-react-refresh": "*",
+                "eslint-plugin-react-you-might-not-need-an-effect": "*",
 		"globals": "^16.4.0",
 		"typescript-eslint": "^8.46.0"
 	},
