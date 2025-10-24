@@ -27,7 +27,7 @@ body = """
 {% endfor %}
 """
 
-postprocessors = [{ pattern = '#([0-9]+)', replace = "https://github.com/mewisland/issues/$[1}" }]
+postprocessors = [{ pattern = '#([0-9]+)', replace = "https://github.com/mewisland/configs/issues/$1" }]
 render_always = true
 trim = true
 
