@@ -23,6 +23,9 @@ importers:
       eslint-plugin-react-perf:
         specifier: 3.3.3
         version: 3.3.3(eslint@9.38.0)
+      eslint-plugin-react-refresh:
+        specifier: 0.4.24
+        version: 0.4.24(eslint@9.38.0)
       globals:
         specifier: ^16.4.0
         version: 16.4.0
@@ -458,6 +461,11 @@ packages:
     engines: {node: '>=6.9.1'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
+
+  eslint-plugin-react-refresh@0.4.24:
+    resolution: {integrity: sha512-nLHIW7TEq3aLrEYWpVaJ1dRgFR+wLDPN8e8FpYAql/bMV2oBEfC37K0gLEGgv9fy66juNShSMV8OkTqzltcG/w==}
+    peerDependencies:
+      eslint: '>=8.40'
 
   eslint-plugin-react@7.37.5:
     resolution: {integrity: sha512-Qteup0SqU15kdocexFNAJMvCJEfa2xUKNV4CC1xsVMrIIqEy3SQ/rqyxCWNzfrd3/ldy6HMlD2e0JDVpDg2qIA==}
@@ -1744,6 +1752,10 @@ snapshots:
       - supports-color
 
   eslint-plugin-react-perf@3.3.3(eslint@9.38.0):
+    dependencies:
+      eslint: 9.38.0
+
+  eslint-plugin-react-refresh@0.4.24(eslint@9.38.0):
     dependencies:
       eslint: 9.38.0
 

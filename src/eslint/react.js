@@ -3,6 +3,7 @@ import { defineConfig } from "eslint/config";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactPerf from "eslint-plugin-react-perf";
+import reactRefresh from "eslint-plugin-react-refresh";
 
 import baseConfig from "./eslint.config.js";
 
@@ -11,9 +12,10 @@ import baseConfig from "./eslint.config.js";
  *
  * This file composes the base configuration with recommended rules from
  * `eslint-plugin-react`, `eslint-plugin-react-hooks`,
- * `eslint-plugin-react-perf`. It also enforces
- * the `react-hooks/exhaustive-deps` rule as an error to catch missing hook
- * dependencies during development.
+ * `eslint-plugin-react-perf`, `eslint-plugin-react-refresh`.
+ * 
+ * It also enforces the `react-hooks/exhaustive-deps` rule as an error to
+ * catch missing hook dependencies during development.
  *
  * @example
  * ```ts
@@ -32,6 +34,7 @@ export default defineConfig([
 	react.configs.flat.recommended,
 	reactHooks.configs.flat.recommended,
 	reactPerf.configs.flat.all,
+	reactRefresh.configs.recommended,
 	{
 		rules: {
 			"react-hooks/exhaustive-deps": "error",
