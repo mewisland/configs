@@ -1,7 +1,15 @@
 {
 	"name": "@mewisland/configs",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Shared configuration presets for ESLint and Biome.",
+	"keywords": [
+		"eslint",
+		"eslint-config",
+		"lint",
+		"biome",
+		"config",
+		"preset"
+	],
 	"homepage": "https://github.com/mewisland/configs#readme",
 	"bugs": {
 		"url": "https://github.com/mewisland/configs/issues"
@@ -28,6 +36,8 @@
 		"README.md"
 	],
 	"scripts": {
+		"inspect:normal": "eslint --config=src/eslint/eslint.config.js --inspect-config",
+		"inspect:react": "eslint --config=src/eslint/react.js --inspect-config",
 		"lint": "eslint --config=src/eslint/eslint.config.js --cache src",
 		"publish:jsr": "pnpm lint && npx jsr publish",
 		"publish:npm": "pnpm lint && npm publish --access public"
@@ -37,24 +47,61 @@
 		"eslint": "^9.38.0",
 		"eslint-plugin-react": "^7.37.5",
 		"eslint-plugin-react-hooks": "^7.0.0",
-		"eslint-plugin-react-perf": "3.3.3",
-		"eslint-plugin-react-refresh": "0.4.24",
-		"eslint-plugin-react-you-might-not-need-an-effect": "0.6.1",
+		"eslint-plugin-react-perf": "^3.3.3",
+		"eslint-plugin-react-refresh": "^0.4.24",
+		"eslint-plugin-react-you-might-not-need-an-effect": "^0.6.1",
 		"globals": "^16.4.0",
 		"typescript-eslint": "^8.46.2"
 	},
 	"peerDependencies": {
 		"@eslint/js": "^9.38.0",
-		"eslint": "^9.37.0",
+		"eslint": "^9.38.0",
 		"eslint-plugin-react": "^7.37.5",
 		"eslint-plugin-react-hooks": "^7.0.0",
 		"eslint-plugin-react-perf": "^3.3.3",
-		"eslint-plugin-react-refresh": "0.4.24",
-		"eslint-plugin-react-you-might-not-need-an-effect": "0.6.1",
+		"eslint-plugin-react-refresh": "^0.4.24",
+		"eslint-plugin-react-you-might-not-need-an-effect": "^0.6.1",
 		"globals": "^16.4.0",
-		"typescript-eslint": "^8.46.0"
+		"typescript": ">=5.0.0 <6",
+		"typescript-eslint": "^8.46.2"
+	},
+	"peerDependenciesMeta": {
+		"eslint-plugin-react": {
+			"optional": true
+		},
+		"eslint-plugin-react-hooks": {
+			"optional": true
+		},
+		"eslint-plugin-react-perf": {
+			"optional": true
+		},
+		"eslint-plugin-react-refresh": {
+			"optional": true
+		},
+		"eslint-plugin-react-you-might-not-need-an-effect": {
+			"optional": true
+		},
+		"typescript": {
+			"optional": true
+		}
 	},
 	"publishConfig": {
 		"access": "public"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"allowedVersions": {
+				"@eslint/js": "^9.38.0",
+				"eslint": "^9.38.0",
+				"eslint-plugin-react": "^7.37.5",
+				"eslint-plugin-react-hooks": "^7.0.0",
+				"eslint-plugin-react-perf": "^3.3.3",
+				"eslint-plugin-react-refresh": "^0.4.24",
+				"eslint-plugin-react-you-might-not-need-an-effect": "^0.6.1",
+				"globals": "^16.4.0",
+				"typescript-eslint": "^8.46.2",
+				"typescript": ">=5.0.0 <6"
+			}
+		}
 	}
 }

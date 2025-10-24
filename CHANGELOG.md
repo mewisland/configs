@@ -1,7 +1,9 @@
 # Changelog
 
-## v0.2.0 - 2025-10-22
+## [0.3.0] - 2025-10-24
 
-- Split out and add a React-specific ESLint config
-- Update the Biome config for `linter.domains`
-- Bump ESLint core and related packages (`eslint@9.38.0`, `@eslint/js@9.38.0`, `typescript-eslint@8.46.2`)
+### Features
+
+- *(react)* Add eslint-plugin-react-perf
+- *(react)* Add eslint-plugin-react-refresh
+- *(react)* Add eslint-plugin-react-you-might-not-need-an-effect
