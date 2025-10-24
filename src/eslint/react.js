@@ -4,6 +4,7 @@ import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactPerf from "eslint-plugin-react-perf";
 import reactRefresh from "eslint-plugin-react-refresh";
+import reactYouMightNotNeedAnEffect from "eslint-plugin-react-you-might-not-need-an-effect";
 
 import baseConfig from "./eslint.config.js";
 
@@ -12,8 +13,9 @@ import baseConfig from "./eslint.config.js";
  *
  * This file composes the base configuration with recommended rules from
  * `eslint-plugin-react`, `eslint-plugin-react-hooks`,
- * `eslint-plugin-react-perf`, `eslint-plugin-react-refresh`.
- * 
+ * `eslint-plugin-react-perf`, `eslint-plugin-react-refresh` and
+ * `eslint-plugin-react-you-might-not-need-an-effect`.
+ *
  * It also enforces the `react-hooks/exhaustive-deps` rule as an error to
  * catch missing hook dependencies during development.
  *
@@ -35,6 +37,7 @@ export default defineConfig([
 	reactHooks.configs.flat.recommended,
 	reactPerf.configs.flat.all,
 	reactRefresh.configs.recommended,
+	reactYouMightNotNeedAnEffect.configs.recommended,
 	{
 		rules: {
 			"react-hooks/exhaustive-deps": "error",
