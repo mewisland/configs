@@ -38,6 +38,7 @@
 		"eslint-plugin-react": "^7.37.5",
 		"eslint-plugin-react-hooks": "^7.0.0",
 		"eslint-plugin-react-perf": "3.3.3",
+		"eslint-plugin-react-refresh": "0.4.24",
 		"globals": "^16.4.0",
 		"typescript-eslint": "^8.46.2"
 	},
@@ -47,6 +48,7 @@
 		"eslint-plugin-react": "^7.37.5",
 		"eslint-plugin-react-hooks": "^7.0.0",
 		"eslint-plugin-react-perf": "^3.3.3",
+		"eslint-plugin-react-refresh": "0.4.24",
 		"globals": "^16.4.0",
 		"typescript-eslint": "^8.46.0"
 	},
